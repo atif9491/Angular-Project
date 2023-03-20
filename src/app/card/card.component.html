@@ -1,0 +1,14 @@
+<div *ngFor="let user of users"> 
+  <div class="my-3">
+    <div class="card" style="width: 18rem; margin-bottom: 25px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqsyPWhAJIYBSTZ_puwc2R_LkmSQvcoOfoQ&usqp=CAU" class="card-img-top" alt="img_Logo">
+        <div class="card-body">
+          <h3 class="card-title">{{user.category_id}}</h3>
+          <h4 class="card-title">{{user.name}}</h4>
+          <h5 class="card-title">{{user.brand}}</h5> 
+          <p class="card-text">{{user.detailed_description.slice(0, 120)}}</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+</div>
