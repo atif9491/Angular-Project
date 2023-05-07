@@ -1,0 +1,40 @@
+.topbar{
+  margin: 0%;
+}
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+#logo {
+  width: 6rem;
+  padding-left: 13px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .example-spacer {
+    display: none;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .topbar{
+    display: none;
+  }
+}

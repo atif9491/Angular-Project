@@ -1,0 +1,216 @@
+
+<!-- Header Top Navigation Bar  -->
+
+<p class="topbar">
+<mat-toolbar color="primary">
+  <a routerLink="/home" id="logo"><span> My App</span></a>
+  <span class="example-spacer"></span>
+
+  <div class="menubar">
+  <!-- Home Content  -->
+  <a routerLink="/home"><button mat-button>Home</button></a>
+
+  <!-- About Us  -->
+  <a routerLink="/aboutus"> <button mat-button>About Us</button> </a>
+
+  <!-- News Content  -->
+  <a routerLink="/news">
+    <button mat-button [matMenuTriggerFor]="news">News</button>
+  </a>
+  <mat-menu #news="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="india">India</button>
+    <button mat-menu-item [matMenuTriggerFor]="world">World</button>
+  </mat-menu>
+
+  <mat-menu #india="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="religion">Religion</button>
+    <button mat-menu-item [matMenuTriggerFor]="politics">Politics</button>
+    <button mat-menu-item [matMenuTriggerFor]="business">Business</button>
+    <button mat-menu-item>Sports</button>
+    <button mat-menu-item>Travel</button>
+  </mat-menu>
+
+  <mat-menu #world="matMenu">
+    <button mat-menu-item>North America</button>
+    <button mat-menu-item>South America</button>
+    <button mat-menu-item>Europe</button>
+    <button mat-menu-item>Africa</button>
+    <button mat-menu-item>Asia</button>
+    <button mat-menu-item>Australia</button>
+    <button mat-menu-item>Atlantic</button>
+  </mat-menu>
+
+  <mat-menu #religion="matMenu">
+    <button mat-menu-item>Islam</button>
+    <button mat-menu-item>Hindunism</button>
+    <button mat-menu-item>Christianity</button>
+    <button mat-menu-item>Sikhism</button>
+    <button mat-menu-item>Buddhism</button>
+  </mat-menu>
+
+  <mat-menu #politics="matMenu">
+    <button mat-menu-item>Election</button>
+    <button mat-menu-item>Parliament</button>
+    <button mat-menu-item>State</button>
+    <button mat-menu-item>District</button>
+  </mat-menu>
+
+  <mat-menu #business="matMenu">
+    <button mat-menu-item>Stocks and Exchange</button>
+    <button mat-menu-item>Economic Development</button>
+    <button mat-menu-item>Target 2025</button>
+    <button mat-menu-item>NFT and Bitcoin</button>
+    <button mat-menu-item disabled>Upcoming Projects</button>
+  </mat-menu>
+
+  <!-- Blogs Content -->
+
+  <a routerLink="/card">
+    <button mat-button [matMenuTriggerFor]="blogs">Blogs</button>
+  </a>
+  <mat-menu #blogs="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="technology">Technology</button>
+    <button mat-menu-item [matMenuTriggerFor]="researchanddevelopment">
+      Research And Development
+    </button>
+  </mat-menu>
+
+  <mat-menu #technology="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="ai">
+      Artificial Intelligence
+    </button>
+    <button mat-menu-item [matMenuTriggerFor]="blockchain">BlockChain</button>
+    <button mat-menu-item [matMenuTriggerFor]="cloudcomputing">
+      Cloud Computing
+    </button>
+    <button mat-menu-item>Data Science</button>
+    <button mat-menu-item>Cyber Security</button>
+  </mat-menu>
+
+  <mat-menu #researchanddevelopment="matMenu">
+    <button mat-menu-item>Engineering</button>
+    <button mat-menu-item>Computer Science and Engineering</button>
+    <button mat-menu-item>Civil Engineering</button>
+    <button mat-menu-item>Mechanical Engineering</button>
+    <button mat-menu-item>Chemical Engineering</button>
+    <button mat-menu-item>Electronics And Communication Engineering</button>
+    <button mat-menu-item>Auronotical Engineering</button>
+  </mat-menu>
+
+  <mat-menu #ai="matMenu">
+    <button mat-menu-item>Narrow AI</button>
+    <button mat-menu-item>General AI</button>
+    <button mat-menu-item>Strong AI</button>
+    <button mat-menu-item>Reactive Machines</button>
+    <button mat-menu-item>Limited Memory</button>
+    <button mat-menu-item>Thoery Of Mind</button>
+    <button mat-menu-item>Self Awareness</button>
+  </mat-menu>
+
+  <mat-menu #blockchain="matMenu">
+    <button mat-menu-item>Public Blockchain</button>
+    <button mat-menu-item>Private Blockchain</button>
+    <button mat-menu-item>Consortium Blockchain</button>
+    <button mat-menu-item>Hybrid Blockchain</button>
+  </mat-menu>
+
+  <mat-menu #cloudcomputing="matMenu">
+    <button mat-menu-item>Public Cloud</button>
+    <button mat-menu-item>Hybrid Cloud</button>
+    <button mat-menu-item>Private Cloud</button>
+    <button mat-menu-item>Community Cloud</button>
+    <button mat-menu-item disabled>Velociraptor</button>
+  </mat-menu>
+
+  <!-- Products -->
+
+  <a routerLink="/card">
+    <button mat-button [matMenuTriggerFor]="products">Products</button>
+  </a>
+  <mat-menu #products="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="digital">Digital</button>
+    <button mat-menu-item [matMenuTriggerFor]="physical">Physical</button>
+  </mat-menu>
+
+  <mat-menu #digital="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="mobileapps">Mobile Apps</button>
+    <button mat-menu-item [matMenuTriggerFor]="digitalart">Digital Art</button>
+    <button mat-menu-item [matMenuTriggerFor]="graphics">Graphics</button>
+    <button mat-menu-item>EBooks</button>
+    <button mat-menu-item>Podcasts</button>
+  </mat-menu>
+
+  <mat-menu #physical="matMenu">
+    <button mat-menu-item>Vehicles And Parts</button>
+    <button mat-menu-item>Home And Garden</button>
+    <button mat-menu-item>Toys and Games</button>
+    <button mat-menu-item>Food and Beverages</button>
+    <button mat-menu-item>Luggage And Bags</button>
+    <button mat-menu-item>Animals And Pet Suppliers</button>
+    <button mat-menu-item>Hardware And Equipments</button>
+  </mat-menu>
+
+  <mat-menu #mobileapps="matMenu">
+    <button mat-menu-item>Google Play Movies and TV</button>
+    <button mat-menu-item>Amazone Prime</button>
+    <button mat-menu-item>Netflix</button>
+    <button mat-menu-item>Hotstar</button>
+    <button mat-menu-item>Eros Now Entertairment</button>
+  </mat-menu>
+
+  <mat-menu #digitalart="matMenu">
+    <button mat-menu-item>Illustration</button>
+    <button mat-menu-item>Animation</button>
+    <button mat-menu-item>Digital Photography</button>
+    <button mat-menu-item>Algoritmic Art</button>
+  </mat-menu>
+
+  <mat-menu #graphics="matMenu">
+    <button mat-menu-item>Design</button>
+    <button mat-menu-item>Typography</button>
+    <button mat-menu-item>Motion Graphic Design</button>
+    <button mat-menu-item>Visual Communication</button>
+    <button mat-menu-item disabled>Web Design</button>
+  </mat-menu>
+
+  <!-- Contacts  -->
+  <a routerLink="/contactus"> <button mat-button>Contact Us</button> </a>
+
+  <!-- Login And Signup -->
+  <a routerLink="/">
+    <button mat-button [matMenuTriggerFor]="loginandsignup">
+      Login/Sign Up
+    </button>
+  </a>
+  <mat-menu #loginandsignup="matMenu">
+    <button mat-menu-item>Login</button>
+    <button mat-menu-item>Signup</button>
+  </mat-menu>
+
+ 
+  <a href="https://github.com/atif9491" target="_blank">
+    <button
+      mat-flat-button
+      class="example-icon"
+      color="primary"
+      aria-label="Example icon button with a open in new tab icon"
+    >
+      <p style="margin: auto">Github</p>
+
+      <mat-icon>open_in_new</mat-icon>
+    </button>
+  </a>
+
+  <a>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with add shopping cart icon"
+  >
+  <mat-icon>add_shopping_cart</mat-icon>
+  </button></a>
+</div>
+</mat-toolbar>
+</p>
+
+ 

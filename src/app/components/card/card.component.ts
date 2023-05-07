@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GetapiService } from '../getapi.service'; 
+import { GetapiService } from '../../getapi.service'; 
 
 @Component({
   selector: 'app-card',

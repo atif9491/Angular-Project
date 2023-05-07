@@ -11,3 +11,11 @@ export class GetapiService {
     return this.http.get(this.url)
   }
 }
+
+export class GetapiServicenews {
+ url = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7870aae03e51446489920cf3aafb8319"
+  constructor( private http:HttpClient ) { }
+  articles(){
+    return this.http.get(this.url)
+  }
+}

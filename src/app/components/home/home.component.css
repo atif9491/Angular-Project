@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkslateblue;
+  overflow: hidden;
+  position: relative;
+  height: 420px;
+  outline: none;
+  margin: 0px;
+  color: white;
+}
+
+.homesection{
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+.headline{
+    color: #fff;
+    text-align: center;
+}
+
+.hone{
+    font-size: 56px;
+font-weight: 700;
+line-height: 56px;
+margin: 15px 5px;
+}
+
+.htwo{
+    font-size: 20px;
+font-weight: 300;
+line-height: 28px;
+margin: 15px 0 25px;
+}
+
+.example-card {
+  max-width: 400px;
+  color: #3f51b5;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ 
+}
+
+.griditem{
+display: flex;
+align-items: center;
+justify-content:center;
+margin: 15px;
+padding: 15px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+/* styles for screens smaller than 960px */
+@media screen and (max-width: 959px) {
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* styles for screens smaller than 725px */
+@media screen and (max-width: 724px) {
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
